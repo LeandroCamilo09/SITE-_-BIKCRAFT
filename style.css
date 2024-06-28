@@ -1,0 +1,275 @@
+/*  */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  display: grid;
+  gap: 60px;
+  justify-items: center;
+  margin-top: 60px;
+  background-color: #f7f7f7;
+}
+/*  */
+/*  */
+.header {
+  display: grid;
+  gap: 60px;
+  justify-items: center;
+}
+/*  */
+/*  */
+
+.logo {
+  display: block;
+  max-width: 100%;
+}
+/*  */
+/*  */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.aba {
+  display: block;
+  color: black;
+  background: #fff;
+  border-radius: 0.15rem;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.aba:hover {
+  background: #e7e7e7;
+  color: crimson;
+  border: 1px solid crimson;
+}
+
+.aba:focus {
+  background: #fff;
+  color: black;
+  border: 1px solid crimson;
+}
+
+.aba:active {
+  background: black;
+  color: white;
+  border: 1px solid crimson;
+  outline: non;
+}
+
+/*  */
+/*  */
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-self: center;
+  max-width: 1000px;
+}
+/*  */
+/*  */
+.foto {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.introducao-cover img {
+  object-fit: cover;
+  height: 100%;
+}
+
+/*  */
+/*  */
+.descricao1 {
+  font-size: 1.25rem;
+  background: #fff;
+  text-align: right;
+  padding: 40px;
+  position: relative;
+}
+
+.vermais {
+  font-size: 1rem;
+  color: #fff;
+  background-color: crimson;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.vermais:hover {
+  background: linear-gradient(crimson, #9f111b);
+  color: white;
+}
+
+.vermais:focus {
+  background: #fff;
+  color: black;
+  border: 1px solid crimson;
+}
+
+.vermais:active {
+  background: black;
+  color: crimson;
+  border: 1px solid crimson;
+  outline: non;
+}
+
+/*  */
+/*  */
+h2 {
+  font-size: 3.5rem;
+  color: rgba(0, 0, 0, 0.3);
+  text-align: right;
+  padding: 34px;
+  margin-top: 100px;
+  background-image: url("./img/onda.svg");
+  /* word-break: break-all; */
+}
+/*  */
+
+/*  */
+
+.icone-1 {
+  background-image: url("./img/BIKE.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  justify-content: start;
+  width: 30px;
+}
+
+.icone-2 {
+  background-image: url("./img/VELOCIDADE.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  justify-content: start;
+  width: 30px;
+}
+
+.icone-3 {
+  background-image: url("./img/RASTREADOR.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  justify-content: start;
+  width: 30px;
+}
+
+/*  */
+/*  */
+
+.coluna2 {
+  display: grid;
+  grid-template-columns: AUTO 1fr;
+  gap: 10px 20px;
+  transition: 0.3s;
+}
+
+.coluna2:hover {
+  border-left: 5px solid crimson;
+}
+
+.descricao2 {
+  font-size: 1rem;
+  background: #fff;
+  text-align: left;
+  padding: 40px;
+}
+
+.descricao2 p {
+  grid-column: 2;
+  margin: 0px;
+}
+
+.descricao2 .coluna2:nth-child(odd) {
+  background: #eee;
+  padding: 0.5rem;
+  margin-top: 0px;
+}
+
+/*  */
+/*  */
+
+.rodape {
+  display: flex;
+  justify-content: center;
+}
+
+.rodape {
+  color: black;
+  font-size: 20px;
+  background: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+.detalhe::before {
+  content: "";
+  background-color: crimson;
+  width: 60px;
+  height: 4px;
+  top: 30px;
+}
+
+.detalhe::before {
+  content: "";
+  position: absolute;
+  right: -30px;
+}
+
+@media (max-width: 1000px) {
+  .conteudo-vantagem {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .header {
+    gap: 30px;
+  }
+
+  .descricao1 {
+    text-align: left;
+    justify-items: center;
+  }
+
+  .introducao::before {
+    display: none;
+  }
+
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .detalhe::before {
+    display: none;
+  }
+}
+
+@media (max-width: 300px) {
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+  }
+}
